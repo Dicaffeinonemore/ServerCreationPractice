@@ -10,6 +10,7 @@ import java.io.IOException;
 
 @WebServlet(name = "inputController", value = "/calc/input")
 public class InputController extends HttpServlet {
+
     @Override
     // /calc/input으로 get 요청이 왔을때 실행되는 메소드
     // HttpServletRequest : request의 모든 데이터를 담고있는 매개변수
@@ -45,14 +46,16 @@ public class InputController extends HttpServlet {
         // get 방식의 주소창에 파라미터를 전달하는 방식으로 servlet 에 데이터를 전달하는 것은 가능하지만 권장하지 않음
         resp.sendRedirect("/calc/input?num1="+a+"&num2="+b);
 
-        @Override
-        public void init() throws ServletException{
-            System.out.println("InputController init...");
-        }
 
-        @Override
-        public void destroy;(){
-            System.out.println("InputController destroy...");
-        }
+
+
+    }
+    @Override
+    public void init() throws ServletException{
+        System.out.println("InputController init...");
+    }
+    @Override
+    public void destroy(){
+        System.out.println("InputController destroy...");
     }
 }
