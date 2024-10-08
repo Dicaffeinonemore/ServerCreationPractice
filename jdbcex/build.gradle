@@ -36,8 +36,18 @@ dependencies {
   testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
   // HikariCp 설정
   implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.0'
-  implementation 'org.slf4j:slf4j-simple:1.7.36'
+//  implementation 'org.slf4j:slf4j-simple:1.7.36'
+  // ModelMapper 설정 : VO <-> DTO 변환하는 라이브러리
+  implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.0.0'
+  //log4j2 : 로그 출력 라이브러리 설정
+  implementation group: 'org.apache.logging.log4j', name:'log4j-core', version:'2.17.2'
+  implementation group: 'org.apache.logging.log4j', name:'log4j-api', version:'2.17.2'
+  implementation group: 'org.apache.logging.log4j', name:'log4j-slf4j-impl', version:'2.17.2'
+  // JSTL 설정
+  implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
 
+//  testCompileOnly group:'org.projectlombok', name:'lombok', version:'1.18.34'
+//  testAnnotationProcessor 'org.projectlombok', name:'lombok', version:'1.18.34'
 
 }
 

@@ -1,14 +1,15 @@
 package org.zerock.jdbcex.domain;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Getter
 @Builder
 @ToString
+// ModelMapper 사용에 필수인 어노테이션
+@AllArgsConstructor
+@NoArgsConstructor
 public class TodoVO {
     private Long tno;
     private String title;
