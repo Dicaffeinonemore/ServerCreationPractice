@@ -1,14 +1,14 @@
-package org.zerock.jdbcex.service;
+package org.zerock.w2.service;
 
 
 
 
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
-import org.zerock.jdbcex.dao.TodoDAO;
-import org.zerock.jdbcex.domain.TodoVO;
-import org.zerock.jdbcex.dto.TodoDTO;
-import org.zerock.jdbcex.util.MapperUtil;
+import org.zerock.w2.dao.TodoDAO;
+import org.zerock.w2.domain.TodoVO;
+import org.zerock.w2.dto.TodoDTO;
+import org.zerock.w2.util.MapperUtil;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -58,7 +58,7 @@ public enum TodoService {
     }
     public void modify(TodoDTO todoDTO) throws Exception {
         // DTO를 dao.update()에서 쓰기위해 vo로 변환
-        TodoVO todoVO = modelMapper.map(todoDTO,TodoVO.class);
+        TodoVO todoVO = modelMapper.map(todoDTO, TodoVO.class);
         log.info(todoVO);
         // UPDATE문을 실행하도록 dao를 실행
         dao.update(todoVO);

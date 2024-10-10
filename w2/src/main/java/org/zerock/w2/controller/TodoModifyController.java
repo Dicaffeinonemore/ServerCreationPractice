@@ -1,7 +1,7 @@
-package org.zerock.jdbcex.controller;
+package org.zerock.w2.controller;
 
-import org.zerock.jdbcex.dto.TodoDTO;
-import org.zerock.jdbcex.service.TodoService;
+import org.zerock.w2.dto.TodoDTO;
+import org.zerock.w2.service.TodoService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
