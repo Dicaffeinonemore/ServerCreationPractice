@@ -8,7 +8,7 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 <!--    annotation-driven : MVC 설정을 어노테이션 기반으로 설정한다.-->
-    <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:annotation-driven conversion-service="conversionService"/>
 <!--    정적 파일의 위치 설정 : HTML, CSS, JavaScript, image 등의 위치를 설정   -->
     <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 <!--    JSP 파일의 위치 설정-->
@@ -19,4 +19,12 @@
         <property name="suffix" value=".jsp" />
     </bean>
     <context:component-scan base-package="org.zerock.springex.controller" />
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="formatters">
+            <set>
+                <bean class="org.zerock.springex.controller.formatter.LocalDateFormatter"/>
+                <bean class="org.zerock.springex.controller.formatter.CheckboxFormatter"/>
+            </set>
+        </property>
+    </bean>
 </beans>

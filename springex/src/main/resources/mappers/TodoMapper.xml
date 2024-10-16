@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace ="org.zerock.springex.mapper.TodoMapper">
+    <select id="getTime" resultType="string">
+        SELECT now()
+    </select>
+    <insert id="insert">
+        INSERT INTO tbl_todo(title,dueDate,writer)
+        VALUES(#{title}, #{dueDate}, #{writer})
+    </insert>
+<!--전체 데이터를 취득하는 SELECT문-->
+    <select id="selectAll" resultType="org.zerock.springex.domain.TodoVO">
+        SELECT tno, title, dueDate, finished, writer FROM tbl_todo ORDER BY tno DESC 
+    </select>
+<!--LIMIT를 사용해 데이터를 취득하는 SELECT문-->
+<!--Mybatis는 기본적으로 Getter,Setter를 통해서 동작하기 때문에 #{skip}은 getSkip()메소드의 실행결과를 반환한다.-->
+    <select id="selectList" resultType="org.zerock.springex.domain.TodoVO">
+        SELECT tno,title,dueDate,finished,writer FROM tbl_todo ORDER BY tno DESC LIMIT #{skip}, #{size}
+    </select>
+    <select id="selectOne" resultType="org.zerock.springex.domain.TodoVO">
+        SELECT tno, title, dueDate, finished, writer FROM tbl_todo WHERE tno = #{tno}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(tno) FROM tbl_todo
+    </select>
+    <delete id="delete">
+        delete from tbl_todo where tno = #{tno}
+    </delete>
+    <update id="update">
+        UPDATE tbl_todo
+        SET title=#{title}, dueDate=#{dueDate}, finished=#{finished}
+        WHERE tno=#{tno}
+    </update>
+</mapper>
