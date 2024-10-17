@@ -17,13 +17,46 @@
 <!--LIMIT를 사용해 데이터를 취득하는 SELECT문-->
 <!--Mybatis는 기본적으로 Getter,Setter를 통해서 동작하기 때문에 #{skip}은 getSkip()메소드의 실행결과를 반환한다.-->
     <select id="selectList" resultType="org.zerock.springex.domain.TodoVO">
-        SELECT tno,title,dueDate,finished,writer FROM tbl_todo ORDER BY tno DESC LIMIT #{skip}, #{size}
+        SELECT tno,title,dueDate,finished,writer
+        FROM tbl_todo
+        <include refid="search"></include>
+        ORDER BY tno DESC LIMIT #{skip},#{size}
     </select>
+<!--특정 sql 부분만 따로 저장하여 여러 sql문의 조건식으로 사용 -->
+    <sql id="search">
+        <where>
+
+            <if test="types != null and types.length > 0">
+                -- 검색물의 조건을 설정 : types에 데이터가 없으면 WHERE 절을 추가 하지않는 if문
+                -- types에 있는 데이터 만큼 반복 실험, collection = 리스트, 배열 데이터, item 하나의 데이터
+                -- open = 반복문이 시작될 때 들어갈 내용, close : 반복문이 끝날 때, seperator= 반복과 반복의 사이에 넣어주는 문구--
+                <foreach collection="types" item="type" open="(" close=")" separator=" OR ">
+                    <if test="type == 't'.toString()">
+                        title LIKE CONCAT('%', #{keyword}, '%')
+                    </if>
+                    <if test="type == 'w'.toString()">
+                        writer LIKE CONCAT('%',#{keyword},'%')
+                    </if>
+                </foreach>
+            </if>
+            <if test="finished">
+                <trim prefix="and">
+                    finished = 1
+                </trim>
+            </if>
+            <if test="from != null and to != null">
+                <trim prefix="and">
+                    dueDate BETWEEN #{from} AND #{to}
+                </trim>
+            </if>
+        </where>
+    </sql>
     <select id="selectOne" resultType="org.zerock.springex.domain.TodoVO">
         SELECT tno, title, dueDate, finished, writer FROM tbl_todo WHERE tno = #{tno}
     </select>
     <select id="getCount" resultType="int">
         SELECT COUNT(tno) FROM tbl_todo
+        <include refid="search"></include>
     </select>
     <delete id="delete">
         delete from tbl_todo where tno = #{tno}

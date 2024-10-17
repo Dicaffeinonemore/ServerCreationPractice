@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Todo List</title>
 </head>
 <body>
@@ -15,7 +16,8 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -30,6 +32,36 @@
                     </div>
                 </nav>
 
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Search</h5>
+                        <form action="/todo/list" method="get">
+                            <input type="hidden" name="size"  value="${pageRequestDTO.size}">
+                            <div class="mb-3">
+                                <input type="checkbox" name="finished" ${pageRequestDTO.finished ? "checked": ""}>완료여부
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="types" value="t" ${pageRequestDTO.checkType("t")? "checked":""}>제목
+                                <input type="checkbox" name="types" value="w" ${pageRequestDTO.checkType("w")? "checked":""}>작성자
+                                <input type="text" name="keyword" class="form-control" value="${pageRequestDTO.keyword}">
+                            </div>
+                            <div class="input-group mb-3 dueDateDiv">
+                                <input type="date" name="from" class="form-control" value="${pageRequestDTO.from}">
+                                <input type="date" name="to" class="form-control" value="${pageRequestDTO.to}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="float-end">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                    <button class="btn btn-info clearBtn" type="reset">Clear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row content">
@@ -95,12 +127,24 @@
                         // 클릭한 테크를 취득
                         const target = event.target;
                         if(target.tagName !== 'A'){
-                            return
+                            return;
                         }
                         // a태그에 저장한 page 정보를 취득
                         const num = target.getAttribute("data-num");
-                        self.location = `/todo/list?page=\${num}`;
+                        // 검색 조건들은 모두 form 태그 안에 존재하기 때문에 form 태그를 실행하면 데이터를 전달 가능
+                        const formObj = document.querySelector("form");
+                        // 페이지 데이터를 함께 보내어 선택한 페이지의 데이터를 취득하도록 페이지 데이터 설정
+                        formObj.innerHTML += `<input type="hidden" name="page" value="\${num}">`
+                        // form 태그 실행
+                        formObj.submit();
+                        // self.location = `/todo/list?page=\${num}`;
                     },false)
+                    // 클리어 버튼을 누르면 제일 첫 번째 페이지로 이동하는 이벤트
+                    document.querySelector(".clearBtn").addEventListener("click", function(e){
+                        e.preventDefault();
+                        e.stopPropagation();
+                        self.location = `/todo/list`
+                    })
                 </script>
             </div>
         </div>

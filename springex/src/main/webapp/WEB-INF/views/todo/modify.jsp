@@ -44,19 +44,17 @@
                     </div>
                     <div class="card-body">
                         <form action="/todo/modify" method="post">
-                            <input type="hidden" name="page" value="${pageRequestDTO.page}">
-                            <input type="hidden" name="size" value="${pageRequestDTO.size}">
                             <div class="input-group mb-3">
                                 <span class="input-group-text">TNO</span>
                                 <input type="text" name="tno" class="form-control" value="${dto.tno}" readonly>
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Title</span>
-                                <input type="text" name="title" class="form-control" value="${dto.title}" >
+                                <input type="text" name="title" class="form-control" value="${dto.title}">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">DueDate</span>
-                                <input type="date" name="dueDate" class="form-control" value="${dto.dueDate}" >
+                                <input type="date" name="dueDate" class="form-control" value="${dto.dueDate}">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">Writer</span>
@@ -82,17 +80,17 @@
                                 </div>
                                 <script>
                                     const formObj = document.querySelector("form")
-                                    document.querySelector(".btn-danger").addEventListener("click",function (e){
+                                    document.querySelector(".btn-danger").addEventListener("click", function (e) {
                                         //태그의 기본적인 기능을 실행하지 않도록 하는 함수, a태그
                                         e.preventDefault();
                                         //자식태그를 클릭하면 부모태그에 존재하는 스크립트나 기능이 실행되는 것을 막아주는 함수
                                         e.stopPropagation();
                                         // form태그의 action과 method의 설정을 remove에 맞게 변경하는 코드
-                                        formObj.action = "/todo/remove";
+                                        formObj.action = `/todo/remove?${pageRequestDTO.link}`;
                                         formObj.method = "post";
                                         // form태그를 실행하는 함수
                                         formObj.submit();
-                                    },false)
+                                    }, false)
                                     // 자바스크립트를 이용한 get 메소드 실행 방식
                                     document.querySelector(".btn-secondary").addEventListener("click", function (event) {
                                         self.location = `/todo/list?${pageRequestDTO.link}`;

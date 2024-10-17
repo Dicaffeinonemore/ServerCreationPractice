@@ -78,18 +78,14 @@ public class TodoController {
                          RedirectAttributes redirectAttributes,
                          PageRequestDTO pageRequestDTO) {
         todoService.remove(tno);
-        redirectAttributes.addAttribute("page", pageRequestDTO.getPage());
-        redirectAttributes.addAttribute("size", pageRequestDTO.getSize());
-        return "redirect:/todo/list";
+        return "redirect:/todo/list?" + pageRequestDTO.getLink();
     }
 
     @PostMapping("/modify")
     public String modify(@Valid TodoDTO todoDTO, PageRequestDTO pageRequestDTO,
-                         BindingResult bindingResult, RedirectAttributes redirectAttributes) {
-
+                         BindingResult bindingResult,
+                         RedirectAttributes redirectAttributes){
         // DTO에 맞는 데이터가 들어왔는지 확인하는 if문
-        redirectAttributes.addAttribute("page", pageRequestDTO.getPage());
-        redirectAttributes.addAttribute("size", pageRequestDTO.getSize());
         if (bindingResult.hasErrors()) {
             log.info("has errors........");
             // 어떤 데이터에서 에러가 발생했는지 데이터를 화면으로 보내주는 기능
