@@ -12,17 +12,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/noticelist")
+@WebServlet("/notice/list")
 public class NoticeListController extends HttpServlet {
-    private NoticeService service = NoticeService.INSTANCE;
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try{
-            List<NoticeDTO> noticeList = service.getNoticeList();
-            req.setAttribute("noticeList", noticeList);
-            req.getRequestDispatcher("/WEB-INF/notice/notice_list.jsp").forward(req, resp);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+  private NoticeService service = NoticeService.INSTANCE;
+  @Override
+  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    try{
+      List<NoticeDTO> noticeList = service.getNoticeList();
+      req.setAttribute("noticeList", noticeList);
+      req.getRequestDispatcher("/WEB-INF/notice/notice_list.jsp").forward(req, resp);
+    }catch(Exception e){
+      e.printStackTrace();
     }
+  }
 }

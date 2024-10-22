@@ -10,19 +10,161 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a03737e-3828-4b8e-b0b8-c3ddf392a698" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d288bde-0de1-4b3d-90e4-69da62ee9229.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d288bde-0de1-4b3d-90e4-69da62ee9229/storage_v2/_src_/schema/webdb.0lK8Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/filter/UTF8Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeAddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeModifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeReadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeRemoveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/dao/NoticeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/util/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/util/MapperUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/WEB-INF/notice/notice_add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/WEB-INF/notice/notice_modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/WEB-INF/notice/notice_view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/notice.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/PageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/PageRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/notice/controller/NoticeViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/notice/dao/NoticeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/notice/domain/NoticeVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/domain/NoticeVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/notice/dto/NoticeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/java/org/zerock/tourist/notice/dto/NoticeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/notice/service/NoticeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/util/ConnectionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/java/org/zerock/tourist/util/MapperUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/WEB-INF/notice/notice_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/WEB-INF/notice/notice_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/WEB-INF/notice/notice_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/css/layout_base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/css/layout_base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/css/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/._Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/._Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/._bg_pc_login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/._bg_pc_login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/._btn_firstpage.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/._btn_firstpage.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/._ico_kakao.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/._ico_kakao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/._ico_naver.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/._ico_naver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/._img_agree.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/._img_agree.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/bg_app.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/bg_app.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/bg_checkbox.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/bg_checkbox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/bg_radio.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/bg_radio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/bg_reglist.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/bg_reglist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_closeMenu.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_closeMenu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_firstpage.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_firstpage.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_firstpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_firstpage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_lastpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_lastpage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_more1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_more1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_more2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_more2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_next_arr.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_next_arr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_next_arr_w.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_next_arr_w.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_nextpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_nextpage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_prev_arr.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_prev_arr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_prev_arr_w.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_prev_arr_w.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_prevpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_prevpage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_roll_play.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_roll_play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_roll_stop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_roll_stop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_rollbutt_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_rollbutt_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_rollbutt_on.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_rollbutt_on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/btn_xpop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/btn_xpop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_arr.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_arr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_blog_r.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_blog_r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_cellphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_cellphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_contact_mobtm.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_contact_mobtm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_face.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_face.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_facebook_r.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_facebook_r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_folding_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_folding_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_folding_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_folding_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_gnb01.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_gnb01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_gnb02.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_gnb02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_gnb03.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_gnb03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_gnb04.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_gnb04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_instargram_r.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_instargram_r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_kakao.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_kakao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_katalk.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_katalk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_katalk_mobtm.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_katalk_mobtm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_naver.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_naver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_nearNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_nearNext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_nearPrev.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_nearPrev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_phone_mobtm.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_phone_mobtm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_search.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_selectArr.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_selectArr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_totop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_totop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/ico_totop_mo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/ico_totop_mo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_captcha.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_captcha.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_05.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_07.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_08.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_09.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_09.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_place_12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_place_12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_pop1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_pop1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_pop2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_pop2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_pop2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_pop2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_pop3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_pop3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_slidecontents01.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_slidecontents01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_slidecontents02.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_slidecontents02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_slidecontents03.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_slidecontents03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_top2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_top2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_top3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_top3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_top5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_top5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_topplace01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_topplace01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_topplace02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_topplace02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/img_topplace03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/img_topplace03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/left-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/left-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/mainslide01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/mainslide01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/mainslide02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/mainslide02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/mainslide03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/mainslide03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/mainslide_mob01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/mainslide_mob01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/mainslide_mob02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/mainslide_mob02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/mainslide_mob03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/mainslide_mob03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/right-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/right-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/slogan.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/slogan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/img/tit_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/img/tit_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/html5shiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/html5shiv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/jquery-1.11.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/jquery.easing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/jquery.smooth-scroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/jquery.smooth-scroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/placeholders.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/placeholders.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/rollmain.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/rollmain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/js/swiper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/mypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/notice_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/notice_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/notice_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/notice_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/notice_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/notice_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/program.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tourist/src/main/webapp/resources/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tourist/tourist/src/main/webapp/resources/sitemap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,32 +222,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.springex [clean].executor": "Run",
-    "JUnit.TodoMapperTest.testSelectSearch.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 9.0.95.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.springex [clean].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TodoMapperTest.testSelectSearch.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.95.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.95">
     <configuration name="springex [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -255,6 +397,12 @@
       <updated>1729127744498</updated>
       <workItem from="1729127745823" duration="339000" />
       <workItem from="1729128106153" duration="9342000" />
+      <workItem from="1729564776644" duration="289000" />
+      <workItem from="1729566838123" duration="383000" />
+      <workItem from="1729568008962" duration="298000" />
+      <workItem from="1729568693917" duration="7741000" />
+      <workItem from="1729579647782" duration="21000" />
+      <workItem from="1729580916472" duration="1714000" />
     </task>
     <servers />
   </component>

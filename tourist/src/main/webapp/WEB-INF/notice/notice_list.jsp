@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -26,7 +26,7 @@
 
     <header id="header">
         <div class="header_area box_inner clear">
-            <h1><a href="index.html">Tourist in tour</a></h1>
+            <h1><a href="/">Tourist in tour</a></h1>
             <p class="openMOgnb"><a href="#"><b class="hdd">메뉴열기</b> <span></span><span></span><span></span></a></p>
             <!-- header_cont -->
             <div class="header_cont">
@@ -48,7 +48,7 @@
                         <li><a href="javascript:;" class="openAll2">고객센터</a>
                             <div class="gnb_depth gnb_depth2_2">
                                 <ul class="submenu_list">
-                                    <li><a href="notice_list.html">공지사항</a></li>
+                                    <li><a href="/notice/list">공지사항</a></li>
                                     <li><a href="javascript:;">문의하기</a></li>
                                 </ul>
                             </div>
@@ -98,6 +98,7 @@
                     <legend>검색</legend>
                     <input type="text" class="tbox" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
                     <a href="javascript:;" class="btn_srch">검색</a>
+                    <a href="/notice/add" class="btn_srch">글작성</a>
                 </fieldset>
             </form>
             <table class="bbsListTbl" summary="번호,제목,조회수,작성일 등을 제공하는 표">
@@ -111,10 +112,10 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${noticeList}" var="notice">
+                <c:forEach var="notice" items="${dtoList}" >
                 <tr>
                     <td>${notice.tno}</td>
-                    <td class="tit_notice"><a href="/noticeread?tno=${notice.tno}}">${notice.title}</a> </td>
+                    <td class="tit_notice"><a href="/notice/read?tno=${notice.tno}">${notice.title}</a> </td>
                     <td>${notice.view}</td>
                     <td>${notice.createDate}</td>
                 </tr>
@@ -177,5 +178,3 @@
 
 </body>
 </html>
-
-
