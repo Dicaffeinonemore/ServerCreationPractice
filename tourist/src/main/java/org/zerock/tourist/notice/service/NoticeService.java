@@ -43,21 +43,21 @@ public enum NoticeService {
     log.info(vo);
     dao.updateNotice(vo);
   }
-  public List<NoticeDTO> listAll(PageRequestDTO pageRequestDTO) throws Exception {
-    //데이터베이스에서 tbl_todo의 모든 데이터를 취득
-    List<NoticeVO> voList = dao.selectNoticeList();
-    log.info("voList...............");
-    log.info(voList);
-    List<NoticeDTO> dtoList = voList.stream()
-            .map(vo -> modelMapper.map(vo, NoticeDTO.class))
-            .collect(Collectors.toList());
-    PageResponseDTO<NoticeDTO> pageResponseDTO = PageResponseDTO.<NoticeDTO>withAll()
-            .pageRequestDTO(pageRequestDTO)
-            .dtoList(dtoList)
-            .total(getOne)
-            .build();
-    return dtoList;
-  }
+//  public List<NoticeDTO> listAll(PageRequestDTO pageRequestDTO) throws Exception {
+//    //데이터베이스에서 tbl_todo의 모든 데이터를 취득
+//    List<NoticeVO> voList = dao.selectNoticeList();
+//    log.info("voList...............");
+//    log.info(voList);
+//    List<NoticeDTO> dtoList = voList.stream()
+//            .map(vo -> modelMapper.map(vo, NoticeDTO.class))
+//            .collect(Collectors.toList());
+//    PageResponseDTO<NoticeDTO> pageResponseDTO = PageResponseDTO.<NoticeDTO>withAll()
+//            .pageRequestDTO(pageRequestDTO)
+//            .dtoList(dtoList)
+//            .total(getOne)
+//            .build();
+//    return dtoList;
+//  }
 
 }
 

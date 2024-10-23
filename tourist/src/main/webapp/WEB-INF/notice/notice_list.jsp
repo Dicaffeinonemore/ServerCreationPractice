@@ -112,7 +112,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="notice" items="${dtoList}" >
+                <c:forEach var="notice" items="${noticeList}" >
                 <tr>
                     <td>${notice.tno}</td>
                     <td class="tit_notice"><a href="/notice/read?tno=${notice.tno}">${notice.title}</a> </td>
